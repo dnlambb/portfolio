@@ -1,4 +1,4 @@
-import { TfiArrowRight } from "react-icons/tfi";
+import { IconArrow } from "./Icons";
 
 const Link = ({ href, children }) => {
 	return (
@@ -23,10 +23,10 @@ const LinkSocial = ({ href, children }) => {
 const LinkArrow = ({ href, content }) => {
 	return (
 		<a
-			class="group w-fit m-auto text-2xl text-center hover:underline underline-offset-4 decoration-color-4 flex flex-row-reverse items-center gap-3"
+			class="w-fit m-auto text-2xl text-center hover:underline underline-offset-4 decoration-color-4 flex flex-row-reverse items-center gap-3 group"
 			href={href}
 		>
-			<TfiArrowRight size={24} className="group-hover:translate-x-3 transition-all" />
+			<IconArrow fill="#fff" size={30} classname="group-hover:translate-x-3 transition-all"/>
 			{content}
 		</a>
 	);
