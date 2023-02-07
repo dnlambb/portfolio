@@ -3,6 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import works from "@data/works.json";
 import { CardWorkToLeft, CardWorkToRight } from "@components/CardWork";
 import { LinkSocial, LinkArrow } from "@components/Link";
+import { About } from "@components/About";
 import { IconGithub, IconLinkedin } from "@components/Icons";
 
 const pinWorks = [...works].slice(0, 3);
@@ -73,5 +74,6 @@ const pinWorks = [...works].slice(0, 3);
 				<LinkArrow href="/works" content="More Works" />
 			</div>
 		</section>
+		<About />
 	</main>
 </Layout>
