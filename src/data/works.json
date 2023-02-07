@@ -5,7 +5,7 @@
     "tech": "React - Sass",
     "title": "Cyberpunk Edgerunners",
     "desc": "Clone page of the Netflix series, Cyberpunk Edgerunners",
-    "urlImg": "../../public/assets/works/cyberpunk-edgerunners.webp",
+    "img": "cyberpunk-edgerunners.webp",
     "urlRepo": "https://github.com/dnlambb/cyberpunk-edgerunners-project",
     "urlWeb": "https://dnlambb.github.io/cyberpunk-edgerunners-project/"
   },
@@ -15,7 +15,7 @@
     "tech": "React - Tailwind",
     "title": "Tic Tac Toe",
     "desc": "Two-player game. Players alternate turns and the first to mark three squares in a row wins",
-    "urlImg": "../../public/assets/works/tic-tac-toe.webp",
+    "img": "tic-tac-toe.webp",
     "urlRepo": "https://github.com/dnlambb/tic-tac-toe",
     "urlWeb": "https://dnlambb.github.io/tic-tac-toe/"
   },
@@ -25,7 +25,7 @@
     "tech": "React - Tailwind",
     "title": "GitHub User Search",
     "desc": "Consuming a GitHub API to get user profile data",
-    "urlImg": "../../public/assets/works/github-user-search.webp",
+    "img": "github-user-search.webp",
     "urlRepo": "https://github.com/dnlambb/github-user-search",
     "urlWeb": "https://dnlambb.github.io/github-user-search/"
   },
@@ -35,7 +35,7 @@
     "tech": "JS - Tailwind",
     "title": "Async Landing",
     "desc": "Asynchronous landing page. An API is consumed to show the latest videos uploaded to Youtube.",
-    "urlImg": "../../public/assets/works/async-landing.webp",
+    "img": "async-landing.webp",
     "urlRepo": "https://github.com/dnlambb/async-landing",
     "urlWeb": "https://dnlambb.github.io/async-landing/"
   },
@@ -45,7 +45,7 @@
     "tech": "Html - Sass",
     "title": "Fylo Landing Page",
     "desc": "Layout of a landing page based on the design of the Frontend Mentor challenge",
-    "urlImg": "../../public/assets/works/fylo-landing.webp",
+    "img": "fylo-landing.webp",
     "urlRepo": "https://github.com/dnlambb/fylo-landing-page",
     "urlWeb": "https://dnlambb.github.io/fylo-landing-page/"
   },
@@ -55,7 +55,7 @@
     "tech": "JS - Css",
     "title": "Timer Under Construction",
     "desc": "Launch timer for a website under construction",
-    "urlImg": "../../public/assets/works/timer-under-construction.webp",
+    "img": "timer-under-construction.webp",
     "urlRepo": "https://github.com/dnlambb/timer-under-construction",
     "urlWeb": "https://dnlambb.github.io/timer-under-construction/"
   },
@@ -65,7 +65,7 @@
     "tech": "Html - Css",
     "title": "Google Clon",
     "desc": "Layout of the Google browser design",
-    "urlImg": "../../public/assets/works/google-clon.webp",
+    "img": "google-clon.webp",
     "urlRepo": "https://github.com/dnlambb/google-clon",
     "urlWeb": "https://dnlambb.github.io/google-clon/"
   },
@@ -75,7 +75,7 @@
     "tech": "React - Sass",
     "title": "Cyberpunk Edgerunners",
     "desc": "Página clon de la serie de Netflix, Cyberpunk Edgerunners",
-    "urlImg": "../../public/assets/works/cyberpunk-edgerunners.webp",
+    "img": "cyberpunk-edgerunners.webp",
     "urlRepo": "https://github.com/dnlambb/cyberpunk-edgerunners-project",
     "urlWeb": "https://dnlambb.github.io/cyberpunk-edgerunners-project/"
   },
@@ -85,7 +85,7 @@
     "tech": "React - Tailwind",
     "title": "GitHub User Search",
     "desc": "Consumir la API de GitHub para obtener los datos del perfil de usuario",
-    "urlImg": "../../public/assets/works/github-user-search.webp",
+    "img": "github-user-search.webp",
     "urlRepo": "https://github.com/dnlambb/github-user-search",
     "urlWeb": "https://dnlambb.github.io/github-user-search/"
   },
@@ -95,7 +95,7 @@
     "tech": "React - Tailwind",
     "title": "Tic Tac Toe",
     "desc": "Juego para dos jugadores. Los jugadores alternan turnos y gana el primero que marque tres casillas seguidas",
-    "urlImg": "../../public/assets/works/tic-tac-toe.webp",
+    "img": "tic-tac-toe.webp",
     "urlRepo": "https://github.com/dnlambb/tic-tac-toe",
     "urlWeb": "https://dnlambb.github.io/tic-tac-toe/"
   },
@@ -105,7 +105,7 @@
     "tech": "JS - Tailwind",
     "title": "Async Landing",
     "desc": "Landing page asíncrona. Se consume una API para mostrar los últimos vídeos subidos a Youtube",
-    "urlImg": "../../public/assets/works/async-landing.webp",
+    "img": "async-landing.webp",
     "urlRepo": "https://github.com/dnlambb/async-landing",
     "urlWeb": "https://dnlambb.github.io/async-landing/"
   },
@@ -115,7 +115,7 @@
     "tech": "Html - Sass",
     "title": "Fylo Landing Page",
     "desc": "Maquetación de una landing page basado en el diseño del reto de Frontend Mentor",
-    "urlImg": "../../public/assets/works/fylo-landing.webp",
+    "img": "fylo-landing.webp",
     "urlRepo": "https://github.com/dnlambb/fylo-landing-page",
     "urlWeb": "https://dnlambb.github.io/fylo-landing-page/"
   },
@@ -125,7 +125,7 @@
     "tech": "JS - Css",
     "title": "Timer Under Construction",
     "desc": "Temporizador de lanzamiento para una web bajo construcción",
-    "urlImg": "../../public/assets/works/timer-under-construction.webp",
+    "img": "timer-under-construction.webp",
     "urlRepo": "https://github.com/dnlambb/timer-under-construction",
     "urlWeb": "https://dnlambb.github.io/timer-under-construction/"
   },
@@ -135,7 +135,7 @@
     "tech": "Html - Css",
     "title": "Google Clon",
     "desc": "Maquetación del diseño del navegador de Google",
-    "urlImg": "../../public/assets/works/google-clon.webp",
+    "img": "google-clon.webp",
     "urlRepo": "https://github.com/dnlambb/google-clon",
     "urlWeb": "https://dnlambb.github.io/google-clon/"
   }
