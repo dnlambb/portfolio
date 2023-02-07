@@ -5,6 +5,7 @@ import { CardWorkToLeft, CardWorkToRight } from "@components/CardWork";
 import { LinkSocial, LinkArrow } from "@components/Link";
 import { About } from "@components/About";
 import { IconGithub, IconLinkedin } from "@components/Icons";
+import { Contact } from "@components/Contact";
 
 const pinWorks = [...works].slice(0, 3);
 ---
@@ -12,10 +13,10 @@ const pinWorks = [...works].slice(0, 3);
 <Layout title="Daniel Cordero">
 	<main class="px-6 text-start relative overflow-hidden md:px-10">
 		<section class="max-w-5xl mx-auto min-h-screen flex flex-col place-content-center">
-			<h1 class="font-bold text-4xl text-color-4 font-heading sm:text-5xl lg:text-6xl">
+			<h1 class="font-heading font-bold text-4xl text-color-4 sm:text-5xl lg:text-6xl">
 				Daniel Cordero
 			</h1>
-			<h2 class="pt-3 font-bold text-4xl font-heading sm:text-5xl lg:text-6xl">
+			<h2 class="font-heading font-bold pt-3 text-4xl sm:text-5xl lg:text-6xl">
 				Frontend Developer
 			</h2>
 			<p class="pt-8 text-lg max-w-screen-sm">
@@ -24,7 +25,7 @@ const pinWorks = [...works].slice(0, 3);
 			</p>
 			<div class="pt-8 inline-flex gap-6">
 				<LinkSocial href="https://www.linkedin.com/in/daniel-cordero-meléndez/">
-					<IconLinkedin fill="#fff" size={50}/>
+					<IconLinkedin fill="#fff" size={50} />
 				</LinkSocial>
 				<LinkSocial href="https://github.com/dnlambb">
 					<IconGithub fill="#fff" size={48} />
@@ -40,7 +41,7 @@ const pinWorks = [...works].slice(0, 3);
 			<span class="text-9xl stroke-1 stroke-color-4 text-color-3"> Developer</span>
 		</div>
 		<section class="m-auto max-w-5xl">
-			<h2 class="pb-8 text-color-4 text-2xl sm:text-3xl">Some Works</h2>
+			<h2 class="font-heading font-medium pb-8 text-color-4 text-2xl sm:text-3xl">Some Works</h2>
 			<div
 				class="w-full flex flex-col items-center pb-8 gap-10 lg:columns-1 lg:flex lg:flex-col lg:gap-20"
 			>
@@ -75,5 +76,6 @@ const pinWorks = [...works].slice(0, 3);
 			</div>
 		</section>
 		<About />
+		<Contact />
 	</main>
 </Layout>
