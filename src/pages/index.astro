@@ -1,55 +1,77 @@
 ---
-import Layout from '@layouts/Layout.astro';
-import { Link } from '@components/Link';
-import { TfiGithub, TfiLinkedin } from 'react-icons/tfi';
+import Layout from "@layouts/Layout.astro";
+import works from "@data/works.json";
+import { CardWorkToLeft, CardWorkToRight } from "@components/CardWork";
+import { LinkSocial, LinkArrow } from "@components/Link";
+import { TfiGithub, TfiLinkedin } from "react-icons/tfi";
+
+const pinWorks = [...works].slice(0, 3);
 ---
 
-<Layout title='Daniel Cordero'>
-	<main class='px-6 text-start relative overflow-hidden'>
-		<section
-			class='max-w-5xl mx-auto min-h-screen flex flex-col place-content-center'
-		>
-			<h1
-				class='font-bold text-4xl text-color-4 font-heading sm:text-5xl lg:text-6xl'
-			>
+<Layout title="Daniel Cordero">
+	<main class="px-6 text-start relative overflow-hidden md:px-10">
+		<section class="max-w-5xl mx-auto min-h-screen flex flex-col place-content-center">
+			<h1 class="font-bold text-4xl text-color-4 font-heading sm:text-5xl lg:text-6xl">
 				Daniel Cordero
 			</h1>
-			<h2 class='pt-3 font-bold text-4xl font-heading sm:text-5xl lg:text-6xl'>
+			<h2 class="pt-3 font-bold text-4xl font-heading sm:text-5xl lg:text-6xl">
 				Frontend Developer
 			</h2>
-			<p class='pt-8 text-lg max-w-screen-sm'>
+			<p class="pt-8 text-lg max-w-screen-sm">
 				1 year of experience in personal projects.<br />
-				Web development with React.<br /> Currently, I focus on building projects
-				to learn more.
+				Web development with React.<br /> Currently, I focus on building projects to learn more.
 			</p>
-			<div class='pt-8 inline-flex gap-4 md:gap-6'>
-				<Link href='https://www.linkedin.com/in/daniel-cordero-meléndez/'>
+			<div class="pt-8 inline-flex gap-6">
+				<LinkSocial href="https://www.linkedin.com/in/daniel-cordero-meléndez/">
 					<TfiLinkedin size={40} />
-				</Link>
-				<Link href='https://github.com/dnlambb'>
+				</LinkSocial>
+				<LinkSocial href="https://github.com/dnlambb">
 					<TfiGithub size={40} />
-				</Link>
+				</LinkSocial>
 			</div>
 		</section>
-		<div
-			class='hidden lg:block max-w-md absolute top-3.5 -right-20 select-none opacity-80 -z-10'
-		>
-			<span class='text-9xl stroke-1 stroke-color-4 text-color-3'>
-				Frontend
-			</span>
-			<span class='text-9xl stroke-1 stroke-color-4 text-color-3'>
-				Developer
-			</span>
+		<div class="hidden lg:block max-w-md absolute top-3.5 -right-20 select-none opacity-80 -z-10">
+			<span class="text-9xl stroke-1 stroke-color-4 text-color-3"> Frontend</span>
+			<span class="text-9xl stroke-1 stroke-color-4 text-color-3"> Developer</span>
 		</div>
-		<div
-			class='hidden lg:block max-w-md absolute top-44 -left-96 select-none opacity-80 -z-10'
-		>
-			<span class='text-9xl stroke-1 stroke-color-4 text-color-3'>
-				Frontend
-			</span>
-			<span class='text-9xl stroke-1 stroke-color-4 text-color-3'>
-				Developer
-			</span>
+		<div class="hidden lg:block max-w-md absolute top-44 -left-96 select-none opacity-80 -z-10">
+			<span class="text-9xl stroke-1 stroke-color-4 text-color-3"> Frontend</span>
+			<span class="text-9xl stroke-1 stroke-color-4 text-color-3"> Developer</span>
 		</div>
+		<section class="m-auto max-w-5xl">
+			<h2 class="pb-8 text-color-4 text-2xl sm:text-3xl">Some Works</h2>
+			<div
+				class="w-full flex flex-col items-center pb-8 gap-10 lg:columns-1 lg:flex lg:flex-col lg:gap-20"
+			>
+				{
+					pinWorks.map((article, index) => {
+						return index === 1 ? (
+							<CardWorkToLeft
+								date={article.date}
+								title={article.title}
+								desc={article.desc}
+								tech={article.tech}
+								linkRepo={article.urlRepo}
+								linkWeb={article.urlWeb}
+								urlImg={article.urlImg}
+								altImg={article.title}
+							/>
+						) : (
+							<CardWorkToRight
+								date={article.date}
+								title={article.title}
+								desc={article.desc}
+								tech={article.tech}
+								linkRepo={article.urlRepo}
+								linkWeb={article.urlWeb}
+								urlImg={article.urlImg}
+								altImg={article.title}
+							/>
+						);
+					})
+				}
+				<LinkArrow href="/works" content="More Works" />
+			</div>
+		</section>
 	</main>
 </Layout>
