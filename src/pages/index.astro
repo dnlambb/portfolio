@@ -3,7 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import works from "@data/works.json";
 import { CardWorkToLeft, CardWorkToRight } from "@components/CardWork";
 import { LinkSocial, LinkArrow } from "@components/Link";
-import { TfiGithub, TfiLinkedin } from "react-icons/tfi";
+import { IconGithub, IconLinkedin } from "@components/Icons";
 
 const pinWorks = [...works].slice(0, 3);
 ---
@@ -23,10 +23,10 @@ const pinWorks = [...works].slice(0, 3);
 			</p>
 			<div class="pt-8 inline-flex gap-6">
 				<LinkSocial href="https://www.linkedin.com/in/daniel-cordero-meléndez/">
-					<TfiLinkedin size={40} />
+					<IconLinkedin fill="#fff" size={50}/>
 				</LinkSocial>
 				<LinkSocial href="https://github.com/dnlambb">
-					<TfiGithub size={40} />
+					<IconGithub fill="#fff" size={48} />
 				</LinkSocial>
 			</div>
 		</section>
@@ -53,7 +53,7 @@ const pinWorks = [...works].slice(0, 3);
 								tech={article.tech}
 								linkRepo={article.urlRepo}
 								linkWeb={article.urlWeb}
-								urlImg={article.urlImg}
+								img={article.img}
 								altImg={article.title}
 							/>
 						) : (
@@ -64,7 +64,7 @@ const pinWorks = [...works].slice(0, 3);
 								tech={article.tech}
 								linkRepo={article.urlRepo}
 								linkWeb={article.urlWeb}
-								urlImg={article.urlImg}
+								img={article.img}
 								altImg={article.title}
 							/>
 						);
