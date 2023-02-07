@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/react': ^2.0.2
   '@astrojs/tailwind': ^3.0.1
+  '@icons-pack/react-simple-icons': ^6.2.0
   '@types/react': ^18.0.21
   '@types/react-dom': ^18.0.6
   astro: ^2.0.6
@@ -10,18 +11,17 @@ specifiers:
   prettier-plugin-astro: ^0.8.0
   react: ^18.0.0
   react-dom: ^18.0.0
-  react-icons: ^4.7.1
   tailwindcss: ^3.0.24
 
 dependencies:
   '@astrojs/react': 2.0.2_fxtgt6bjwd6p4cwoordejim2zi
   '@astrojs/tailwind': 3.0.1_jiulpwjund37q6yckwlgwo54mu
+  '@icons-pack/react-simple-icons': 6.2.0_react@18.2.0
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
   astro: 2.0.6
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-icons: 4.7.1_react@18.2.0
   tailwindcss: 3.2.4
 
 devDependencies:
@@ -593,6 +593,14 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@icons-pack/react-simple-icons/6.2.0_react@18.2.0:
+    resolution: {integrity: sha512-YZzB5oHRvOslOIiug97dLqfhv7U0+78JOa8w5Aqxq2Ulr2bVBrqtFV+hMKXhcZjlPdFzpUrFfAJ9AHLe4FdYqQ==}
+    peerDependencies:
+      react: ^16.13 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
@@ -2562,14 +2570,6 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
-    dev: false
-
-  /react-icons/4.7.1_react@18.2.0:
-    resolution: {integrity: sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==}
-    peerDependencies:
-      react: '*'
-    dependencies:
-      react: 18.2.0
     dev: false
 
   /react/18.2.0:
