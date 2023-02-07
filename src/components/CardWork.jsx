@@ -11,7 +11,7 @@ const CardWorkToRight = ({ date, title, desc, tech, linkRepo, linkWeb, img, altI
 				</header>
 				<p className="py-5 lg:max-w-md lg:my-4">{desc}</p>
 				<p className="pb-8">{tech}</p>
-				<footer className="flex flex-col sm:flex-row gap-10">
+				<footer className="flex flex-wrap gap-10 w-fit">
 					<Link href={linkRepo}>
 						<IconGithub fill="#fff" size={30} />
 						Repository
@@ -39,7 +39,7 @@ const CardWorkToLeft = ({ date, title, desc, tech, linkRepo, linkWeb, img, altIm
 				</header>
 				<p className="py-5 lg:max-w-md lg:my-4">{desc}</p>
 				<p className="pb-8">{tech}</p>
-				<footer className="flex flex-col sm:flex-row lg:justify-end gap-10">
+				<footer className="flex flex-wrap w-fit lg:ml-auto gap-10">
 					<Link href={linkRepo}>
 						<IconGithub fill="#fff" size={30} />
 						Repository
