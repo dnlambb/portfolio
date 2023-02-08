@@ -27,7 +27,7 @@ const LinkArrow = ({ href, content }) => {
 			class="w-fit m-auto text-2xl text-center hover:underline underline-offset-4 decoration-color-4 flex flex-row-reverse items-center gap-3 group"
 			target="_blank"
 		>
-			<IconArrow fill="#fff" size={30} classname="group-hover:translate-x-3 transition-all" />
+			<IconArrow fill="#fff" classname="w-7 group-hover:translate-x-3 transition-all" />
 			{content}
 		</a>
 	);

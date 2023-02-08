@@ -11,18 +11,18 @@ export const Contact = () => {
 				</h2>
 				<p>I will try to respond as soon as possible.</p>
 				<p>Don't be shy and contact me in the following ways:</p>
-				<div className="flex flex-wrap gap-10 w-fit py-5 sm:mx-auto lg:m-0 lg:mt-auto">
-					<LinkSocial
-						href="https://www.linkedin.com/in/daniel-cordero-meléndez/"
-						className="w-fit h-fit hover:scale-110 transition-all"
-					>
-						<IconLinkedin size={60} fill="#fff" />
-					</LinkSocial>
+				<div className="flex flex-wrap gap-6 w-fit py-5 sm:mx-auto lg:m-0 lg:mt-auto">
 					<LinkSocial
 						href="mailto:dnlambb@writeme.com?Subject=Hello"
 						className="w-fit h-fit hover:scale-110 transition-all"
 					>
-						<IconEmail size={60} fill="#fff" />
+						<IconEmail fill="#fff" classname="w-12" />
+					</LinkSocial>
+					<LinkSocial
+						href="https://www.linkedin.com/in/daniel-cordero-meléndez/"
+						className="w-fit h-fit hover:scale-110 transition-all"
+					>
+						<IconLinkedin fill="#fff" classname="w-12" />
 					</LinkSocial>
 				</div>
 			</div>
