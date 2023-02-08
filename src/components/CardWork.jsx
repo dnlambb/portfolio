@@ -65,4 +65,29 @@ const CardWorkToLeft = ({ date, title, desc, tech, linkRepo, linkWeb, img, altIm
 	);
 };
 
-export { CardWorkToRight, CardWorkToLeft };
+const CardWorkSimple = ({ date, title, desc, tech, linkRepo, linkWeb }) => {
+	return (
+		<article className="min-w-[232px] max-w-xl w-full h-fit mx-auto my-auto mb-4 px-4 py-8 bg-color-3 shadow-sm rounded-md overflow-hidden sm:min-w-[300px] sm:px-6">
+			<div className="flex flex-col justify-evenly">
+				<header className="flex flex-col-reverse gap-3">
+					<h3 className="font-heading text-2xl">{title}</h3>
+					<p className="text-sm">{date}</p>
+				</header>
+				<p className="py-5">{desc}</p>
+				<p className="pb-8">{tech}</p>
+				<footer className="w-fit flex flex-wrap gap-5 sm:gap-10">
+					<Link href={linkRepo}>
+						<IconGithub fill="#fff" classname="w-8" />
+						Repository
+					</Link>
+					<Link href={linkWeb}>
+						<IconLink fill="#fff" classname="w-6" />
+						Website
+					</Link>
+				</footer>
+			</div>
+		</article>
+	);
+};
+
+export { CardWorkToRight, CardWorkToLeft, CardWorkSimple };
