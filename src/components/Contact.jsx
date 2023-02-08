@@ -4,7 +4,7 @@ import mockup from "../../public/assets/programming.svg";
 
 export const Contact = () => {
 	return (
-		<section className="w-fit m-auto my-20 lg:flex lg:flex-row lg:gap-10">
+		<section id="contact" className="w-fit m-auto my-20 lg:flex lg:flex-row lg:gap-10">
 			<div className="w-fit h-fit sm:my-auto sm:text-center lg:text-start">
 				<h2 className="text-color-4 text-3xl pb-5 font-medium font-heading sm:text-4xl">
 					Let's talk?

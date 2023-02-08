@@ -1,5 +1,5 @@
 ---
-import { Navbar } from "@components/Navbar";
+import { HeaderNav } from "@components/HeaderNav";
 import { CardWorkSimple } from "@components/CardWork";
 import Layout from "@layouts/Layout.astro";
 import works from "@data/works.json";
@@ -10,7 +10,7 @@ const enWorks = [...works].filter((work) => work.language === "en");
 ---
 
 <Layout title="Daniel Cordero - Works">
-	<Navbar />
+	<HeaderNav client:load />
 	<main class="px-6">
 		<section class="py-10">
 			<h1 class="font-heading pb-2 text-3xl sm:text-4xl text-center text-color-4">Works</h1>

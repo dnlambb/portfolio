@@ -1,6 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import works from "@data/works.json";
+import { HeaderNav } from "@components/HeaderNav";
 import { CardWorkToLeft, CardWorkToRight } from "@components/CardWork";
 import { LinkSocial, LinkArrow } from "@components/Link";
 import { About } from "@components/About";
@@ -12,8 +13,9 @@ const pinWorks = [...works].slice(0, 3);
 ---
 
 <Layout title="Daniel Cordero">
+	<HeaderNav client:load />
 	<main class="px-6 text-start relative overflow-hidden md:px-10">
-		<section class="max-w-5xl mx-auto min-h-screen flex flex-col place-content-center">
+		<section id="home" class="min-h-screen max-w-5xl mx-auto py-10 flex flex-col place-content-center">
 			<h1 class="font-heading font-bold text-4xl text-color-4 sm:text-5xl lg:text-6xl">
 				Daniel Cordero
 			</h1>

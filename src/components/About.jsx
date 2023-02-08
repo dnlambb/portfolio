@@ -17,8 +17,8 @@ import {
 
 export const About = () => {
 	return (
-		<section className="max-w-5xl mx-auto py-20">
-			<h2 className="pb-6 text-2xl sm:text-3xl text-color-4">About Me</h2>
+		<section id="about" className="max-w-5xl mx-auto py-20">
+			<h2 className="font-medium font-heading pb-6 text-2xl text-color-4 sm:text-3xl ">About Me</h2>
 			<p className="pb-3 max-w-screen-md">
 				I'm passionate about programming and the world of technology. My goal is to improve and
 				learn more about scalable and impactful software development.
@@ -31,9 +31,9 @@ export const About = () => {
 			<p>When I'm not developing, I like to read, play video games or volleyball.</p>
 			<Resume />
 			<section className="w-full mt-16">
-				<h3 className="text-xl sm:text-2xl text-color-4 pb-10">Skills</h3>
+				<h3 className="font-heading font-medium text-xl sm:text-2xl text-color-4 pb-10">Skills</h3>
 				<div className="max-w-max flex flex-col gap-6 sm:flex-row group">
-					<h4 className="sm:m-auto underline underline-offset-4 decoration-color-2 group-hover:decoration-color-4 transition-all duration-300">
+					<h4 className="font-heading font-medium underline underline-offset-4 decoration-color-2 opacity-80 group-hover:opacity-100 group-hover:decoration-color-4 transition-all duration-300 sm:m-auto">
 						Frontend
 					</h4>
 					<div className="flex flex-wrap gap-6 justify-start items-center">
@@ -54,7 +54,7 @@ export const About = () => {
 					</div>
 				</div>
 				<div className="max-w-max my-10 flex flex-col gap-6 sm:flex-row group">
-					<h4 className="sm:m-auto sm:pl-10 underline underline-offset-4 decoration-color-2 group-hover:decoration-color-4 transition-all duration-300">
+					<h4 className="font-heading font-medium underline underline-offset-4 decoration-color-2 opacity-80 group-hover:opacity-100 group-hover:decoration-color-4 transition-all duration-300 sm:m-auto sm:pl-10">
 						Backend
 					</h4>
 					<div className="flex flex-wrap gap-6 justify-start items-center">
@@ -65,7 +65,7 @@ export const About = () => {
 					</div>
 				</div>
 				<div className="max-w-max flex flex-col gap-6 sm:flex-row group">
-					<h4 className="sm:m-auto sm:pl-20 underline underline-offset-4 decoration-color-2 group-hover:decoration-color-4 transition-all duration-300">
+					<h4 className="font-heading font-medium underline underline-offset-4 decoration-color-2 opacity-80 group-hover:opacity-100 group-hover:decoration-color-4 transition-all duration-300 sm:m-auto sm:pl-20">
 						Others
 					</h4>
 					<div className="flex flex-wrap gap-6 justify-start items-center">
