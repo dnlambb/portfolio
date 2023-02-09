@@ -1,53 +1,47 @@
-# Astro Starter Kit: Basics
+# Portfolio
 
-```
-npm create astro@latest -- --template basics
-```
+This is my portfolio and personal website.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+**View deploy:** [dnlambb.com](https://dnlambb.com)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aef1dc91-0bf7-47bd-b1da-fdcd7ae1462c/deploy-status)](https://app.netlify.com/sites/dnlambb/deploys)
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## Tech Stack
 
-## 🚀 Project Structure
+- Astro
+- React
+- Tailwind
 
-Inside of your Astro project, you'll see the following folders and files:
+## Run Locally
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+Clone the project
+
+```bash
+  git clone https://github.com/dnlambb/portfolio.git
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Go to the project directory
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+  cd portfolio
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+Install dependencies
 
-## 🧞 Commands
+```bash
+  pnpm install
+```
 
-All commands are run from the root of the project, from a terminal:
+Start the server
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+```bash
+  pnpm dev
+```
 
-## 👀 Want to learn more?
+## Feedback
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+If you have any feedback, please write me at [dnlambb@writeme.com](mailto:dnlambb@writeme.com)
+
+## License
+
+[MIT](./LICENSE)
