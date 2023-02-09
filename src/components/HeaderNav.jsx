@@ -15,7 +15,7 @@ export const HeaderNav = () => {
 		<header className="z-10 sticky w-full top-0">
 			<nav className="py-2 px-7 flex items-center justify-between md:px-10 bg-navbar backdrop-blur-sm">
 				<div className="z-20 text-2xl flex items-center cursor-pointer">
-					<Link href="/" className="mr-1">
+					<Link href="/" className="mr-1" ariaLabel="Visit the home page">
 						<IconLogo fill="#fff" classname="w-12" />
 					</Link>
 				</div>

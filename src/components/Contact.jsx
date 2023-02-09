@@ -15,12 +15,14 @@ export const Contact = () => {
 					<LinkSocial
 						href="mailto:dnlambb@writeme.com?Subject=Hello"
 						className="w-fit h-fit hover:scale-110 transition-all"
+						ariaLabel="Send me an e-mail"
 					>
 						<IconEmail fill="#fff" classname="w-12" />
 					</LinkSocial>
 					<LinkSocial
 						href="https://www.linkedin.com/in/daniel-cordero-meléndez/"
 						className="w-fit h-fit hover:scale-110 transition-all"
+						ariaLabel="Visit my Linkedin"
 					>
 						<IconLinkedin fill="#fff" classname="w-12" />
 					</LinkSocial>

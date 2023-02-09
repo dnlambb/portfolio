@@ -1,23 +1,25 @@
 import { IconArrow } from "./Icons";
 
-const Link = ({ href, children, newPage = false }) => {
+const Link = ({ href, children, newPage = false, ariaLabel }) => {
 	return (
 		<a
 			href={href}
 			className="w-fit flex gap-3 items-center hover:underline underline-offset-2 decoration-color-4 transition-all duration-300"
 			target={newPage === true ? "_blank" : ""}
+			aria-label={ariaLabel}
 		>
 			{children}
 		</a>
 	);
 };
 
-const LinkSocial = ({ href, children, newPage = false }) => {
+const LinkSocial = ({ href, children, newPage = false, ariaLabel }) => {
 	return (
 		<a
 			href={href}
 			className="w-fit hover:scale-110 transition-all cursor-pointer"
 			target={newPage === true ? "_blank" : ""}
+			aria-label={ariaLabel}
 		>
 			{children}
 		</a>
