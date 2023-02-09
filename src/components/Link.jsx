@@ -28,7 +28,7 @@ const LinkArrow = ({ href, content, newPage = false }) => {
 	return (
 		<a
 			href={href}
-			class="w-fit m-auto text-2xl text-center hover:underline underline-offset-4 decoration-color-4 flex flex-row-reverse items-center gap-3 group"
+			className="w-fit m-auto text-2xl text-center hover:underline underline-offset-4 decoration-color-4 flex flex-row-reverse items-center gap-3 group"
 			target={newPage === true ? "_blank" : ""}
 		>
 			<IconArrow fill="#fff" classname="w-7 group-hover:translate-x-3 transition-all" />

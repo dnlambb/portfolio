@@ -1,7 +1,7 @@
 import { IconDelete, IconLogo, IconMenu } from "./Icons";
 import { Link } from "./Link";
 import { Resume } from "./Resume";
-import { useState } from "react"; // import state
+import { useState } from "react";
 
 export const HeaderNav = () => {
 	let links = [
