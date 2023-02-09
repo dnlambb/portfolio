@@ -11,7 +11,7 @@ module.exports = {
 			"color-2": "#1a1c20",
 			"color-3": "#292733",
 			"color-4": "#f0a500",
-			"navbar": "rgba(0,0,0,0.8)",
+			navbar: "rgba(0,0,0,0.8)",
 		},
 		extend: {},
 	},
