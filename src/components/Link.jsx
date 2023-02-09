@@ -37,4 +37,18 @@ const LinkArrow = ({ href, content, newPage = false }) => {
 	);
 };
 
-export { Link, LinkSocial, LinkArrow };
+const FooterLink = ({ href, children }) => {
+	return (
+		<li>
+			<a
+				href={href}
+				target="_blank"
+				className="hover:underline underline-offset-4 decoration-color-4 transition-all"
+			>
+				{children}
+			</a>
+		</li>
+	);
+};
+
+export { Link, LinkSocial, LinkArrow, FooterLink };
