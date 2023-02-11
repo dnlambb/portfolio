@@ -13,11 +13,11 @@ export const HeaderNav = () => {
 	let [open, setOpen] = useState(false);
 	return (
 		<header className="z-10 sticky w-full top-0">
-			<nav className="py-2 px-7 flex items-center justify-between md:px-10 bg-navbar backdrop-blur-sm">
-				<div className="z-20 text-2xl flex items-center cursor-pointer">
-					<Link href="/" className="mr-1" ariaLabel="Visit the home page">
-						<IconLogo fill="#fff" classname="w-12" />
-					</Link>
+			<nav className="py-2 px-8 flex items-center md:px-10 bg-navbar border-b border-b-color-1 backdrop-blur-sm">
+				<div className="z-20 flex items-center cursor-pointer">
+					<a href="/" aria-label="Visit the home page">
+						<IconLogo fill="#fff" classname="w-12 rounded-full hover:scale-105 hover:bg-color-2 transition-all" />
+					</a>
 				</div>
 
 				<span
@@ -32,7 +32,7 @@ export const HeaderNav = () => {
 				</span>
 
 				<ul
-					className={`z-10 absolute w-full h-screen top-0 left-0 pl-10 pt-20 pb-12 transition-all ease-in-out bg-navbar md:z-auto md:static md:w-auto md:h-auto md:py-0 md:bg-[transparent] md:flex md:items-center duration-300 ${
+					className={`z-10 absolute w-full h-screen top-0 left-0 pl-10 pt-20 pb-12 transition-all ease-in-out bg-navbar md:z-auto md:static md:w-auto md:h-auto md:py-0 md:pl-2 md:bg-[transparent] md:flex md:items-center duration-300 ${
 						open ? "left-0" : "left-[-1000px]"
 					}`}
 				>
