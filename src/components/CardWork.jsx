@@ -7,16 +7,16 @@ const CardWorkToRight = ({ date, title, desc, tech, linkRepo, linkWeb, img, altI
 			<div className="flex flex-col justify-evenly">
 				<header className="flex flex-col-reverse gap-3 lg:flex-row lg:justify-between lg:items-center lg:max-w-md">
 					<h3 className="font-heading text-2xl">{title}</h3>
-					<p className="text-sm">{date}</p>
+					<p className="text-sm opacity-80">{date}</p>
 				</header>
-				<p className="py-5 lg:max-w-md lg:my-4">{desc}</p>
-				<p className="pb-8">{tech}</p>
+				<p className="py-5 lg:max-w-md lg:my-4 opacity-90">{desc}</p>
+				<p className="pb-8 opacity-90">{tech}</p>
 				<footer className="flex flex-wrap gap-10 w-fit">
-					<Link href={linkRepo}>
+					<Link href={linkRepo} newPage={true}>
 						<IconGithub fill="#fff" classname="w-8" />
 						Repository
 					</Link>
-					<Link href={linkWeb}>
+					<Link href={linkWeb} newPage={true}>
 						<IconLink fill="#fff" classname="w-6" />
 						Website
 					</Link>
@@ -39,16 +39,16 @@ const CardWorkToLeft = ({ date, title, desc, tech, linkRepo, linkWeb, img, altIm
 			<div className="flex flex-col justify-evenly">
 				<header className="flex flex-col-reverse gap-3 lg:flex-row-reverse lg:justify-between lg:items-center lg:max-w-md">
 					<h3 className="font-heading font-medium text-2xl">{title}</h3>
-					<p className="text-sm">{date}</p>
+					<p className="text-sm opacity-80">{date}</p>
 				</header>
-				<p className="py-5 lg:max-w-md lg:my-4">{desc}</p>
-				<p className="pb-8">{tech}</p>
+				<p className="py-5 lg:max-w-md lg:my-4 opacity-90">{desc}</p>
+				<p className="pb-8 opacity-90">{tech}</p>
 				<footer className="flex flex-wrap w-fit lg:ml-auto gap-10">
-					<Link href={linkRepo}>
+					<Link href={linkRepo} newPage={true}>
 						<IconGithub fill="#fff" classname="w-8" />
 						Repository
 					</Link>
-					<Link href={linkWeb}>
+					<Link href={linkWeb} newPage={true}>
 						<IconLink fill="#fff" classname="w-6" />
 						Website
 					</Link>
@@ -71,16 +71,16 @@ const CardWorkSimple = ({ date, title, desc, tech, linkRepo, linkWeb }) => {
 			<div className="flex flex-col justify-evenly">
 				<header className="flex flex-col-reverse gap-3">
 					<h3 className="font-heading text-2xl">{title}</h3>
-					<p className="text-sm">{date}</p>
+					<p className="text-sm opacity-80">{date}</p>
 				</header>
-				<p className="py-5">{desc}</p>
-				<p className="pb-8">{tech}</p>
+				<p className="py-5 opacity-90">{desc}</p>
+				<p className="pb-8 opacity-90">{tech}</p>
 				<footer className="w-fit flex flex-wrap gap-5 sm:gap-10">
-					<Link href={linkRepo}>
+					<Link href={linkRepo} newPage={true}>
 						<IconGithub fill="#fff" classname="w-8" />
 						Repository
 					</Link>
-					<Link href={linkWeb}>
+					<Link href={linkWeb} newPage={true}>
 						<IconLink fill="#fff" classname="w-6" />
 						Website
 					</Link>
