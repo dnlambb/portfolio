@@ -13,7 +13,11 @@ module.exports = {
 			"color-4": "#f0a500",
 			navbar: "rgba(0,0,0,0.8)",
 		},
-		extend: {},
+		extend: {
+			backgroundImage: {
+				curveLines: "url('/assets/curve-lines.svg')",
+			},
+		},
 	},
 	plugins: [],
 };
