@@ -4,7 +4,7 @@ const Link = ({ href, children, newPage = false, ariaLabel }) => {
 	return (
 		<a
 			href={href}
-			className="w-fit flex gap-3 items-center hover:underline underline-offset-2 decoration-color-4 transition-all duration-300"
+			className="relative w-fit flex gap-3 items-center before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-color-4 before:transition hover:before:scale-100 transition-all duration-300"
 			target={newPage === true ? "_blank" : ""}
 			aria-label={ariaLabel}
 		>
@@ -30,7 +30,7 @@ const LinkArrow = ({ href, content, newPage = false }) => {
 	return (
 		<a
 			href={href}
-			className="w-fit m-auto text-2xl text-center hover:underline underline-offset-4 decoration-color-4 flex flex-row-reverse items-center gap-3 group"
+			className="relative w-fit m-auto text-2xl text-center flex flex-row-reverse items-center gap-3 before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-color-4 before:transition hover:before:scale-100 group"
 			target={newPage === true ? "_blank" : ""}
 		>
 			<IconArrow fill="#fff" classname="w-7 group-hover:translate-x-3 transition-all" />
@@ -45,7 +45,7 @@ const FooterLink = ({ href, children }) => {
 			<a
 				href={href}
 				target="_blank"
-				className="hover:underline underline-offset-4 decoration-color-4 transition-all"
+				className="relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-color-4 before:transition hover:before:scale-100 transition-all"
 			>
 				{children}
 			</a>
