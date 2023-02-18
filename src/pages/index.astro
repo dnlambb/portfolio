@@ -17,15 +17,23 @@ const pinWorks = [...works].filter(
 );
 ---
 
-<Layout title="Daniel Cordero - @dnlambb" desc="Frontend Developer, #Javascript #React">
+<Layout
+	title="Daniel Cordero - @dnlambb"
+	desc="Frontend Developer, #Javascript #React"
+>
 	<HeaderNav client:load />
 	<main class="px-6 text-start relative overflow-hidden sm:px-10 md:px-20">
-		<div class="z-[-2] absolute top-0 w-screen h-screen lg:bg-curveLines bg-no-repeat bg-cover"></div>
+		<div
+			class="z-[-2] absolute top-0 w-screen h-screen lg:bg-curveLines bg-no-repeat bg-cover"
+		>
+		</div>
 		<section
 			id="home"
 			class="min-h-[93vh] max-w-5xl mx-auto pt-10 pb-20 flex flex-col place-content-center"
 		>
-			<h1 class="font-heading font-bold text-4xl text-color-4 sm:text-5xl lg:text-6xl">
+			<h1
+				class="font-heading font-bold text-4xl text-color-4 sm:text-5xl lg:text-6xl"
+			>
 				Daniel Cordero
 			</h1>
 			<h2 class="font-heading font-bold pt-3 text-4xl sm:text-5xl lg:text-6xl">
@@ -33,20 +41,33 @@ const pinWorks = [...works].filter(
 			</h2>
 			<p class="pt-8 text-lg max-w-screen-sm opacity-90">
 				1 year of experience in personal projects.<br />
-				Web development with React.<br /> Currently, I focus on building projects to learn more.
+				Web development with React.<br /> Currently, I focus on building projects
+				to learn more.
 			</p>
 			<div class="pt-8 inline-flex gap-6">
-				<LinkSocial href="https://www.linkedin.com/in/daniel-cordero-meléndez/" ariaLabel="Visit my Linkedin">
+				<LinkSocial
+					href="https://www.linkedin.com/in/daniel-cordero-meléndez/"
+					ariaLabel="Visit my Linkedin"
+					newPage
+				>
 					<IconLinkedin fill="#fff" classname="w-12" />
 				</LinkSocial>
-				<LinkSocial href="https://github.com/dnlambb" ariaLabel="Visit my GitHub">
+				<LinkSocial
+					href="https://github.com/dnlambb"
+					ariaLabel="Visit my GitHub"
+					newPage
+				>
 					<IconGithub fill="#fff" classname="w-12" />
 				</LinkSocial>
 			</div>
 		</section>
-		
+
 		<section class="m-auto max-w-5xl">
-			<h2 class="font-heading font-medium pb-8 text-color-4 text-2xl text-center sm:text-3xl lg:text-start">Some Works</h2>
+			<h2
+				class="font-heading font-medium pb-8 text-color-4 text-2xl text-center sm:text-3xl lg:text-start"
+			>
+				Some Works
+			</h2>
 			<div
 				class="w-full flex flex-col items-center pb-8 gap-10 lg:columns-1 lg:flex lg:flex-col lg:gap-20"
 			>

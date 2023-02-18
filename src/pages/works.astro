@@ -9,11 +9,18 @@ import { LinkArrow } from "@components/Link";
 const enWorks = [...works].filter((work) => work.language === "en");
 ---
 
-<Layout title="Daniel Cordero - @dnlambb - Works" desc="@dnlambb Works. Frontend Developer, #JavaScript #React">
+<Layout
+	title="Daniel Cordero - @dnlambb - Works"
+	desc="@dnlambb Works. Frontend Developer, #JavaScript #React"
+>
 	<HeaderNav client:load />
 	<main class="px-6">
 		<section class="py-10">
-			<h1 class="font-heading pb-2 text-3xl sm:text-4xl text-center text-color-4">Works</h1>
+			<h1
+				class="font-heading pb-2 text-3xl sm:text-4xl text-center text-color-4"
+			>
+				Works
+			</h1>
 		</section>
 		<section class="w-full max-w-6xl mx-auto pb-20 columns-1 md:columns-2">
 			{
@@ -31,7 +38,10 @@ const enWorks = [...works].filter((work) => work.language === "en");
 				})
 			}
 		</section>
-		<LinkArrow href="https://github.com/dnlambb?tab=repositories" content="All Works" />
+		<LinkArrow
+			href="https://github.com/dnlambb?tab=repositories"
+			content="All Works"
+		/>
 	</main>
 	<Footer />
 </Layout>
