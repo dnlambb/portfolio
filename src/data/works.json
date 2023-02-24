@@ -21,15 +21,6 @@
 	},
 	{
 		"language": "en",
-		"date": "Jan 25, 2023",
-		"tech": "Astro - Vue - Sass",
-		"title": "Portfolio v.1",
-		"desc": "First version of my portfolio",
-		"urlRepo": "https://github.com/dnlambb/portfolio-v1",
-		"urlWeb": "https://dnlambb.github.io/portfolio-v1/"
-	},
-	{
-		"language": "en",
 		"date": "Jan 1, 2023",
 		"tech": "React - Tailwind",
 		"title": "GitHub User Search",
@@ -93,15 +84,6 @@
 		"img": "tic-tac-toe.webp",
 		"urlRepo": "https://github.com/dnlambb/tic-tac-toe",
 		"urlWeb": "https://dnlambb.github.io/tic-tac-toe/"
-	},
-	{
-		"language": "es",
-		"date": "Jun 25, 2023",
-		"tech": "Astro - Vue - Sass",
-		"title": "Portafolio v.1",
-		"desc": "Primera versión de mi portafolio",
-		"urlRepo": "https://github.com/dnlambb/portfolio-v1",
-		"urlWeb": "https://dnlambb.github.io/portfolio-v1/"
 	},
 	{
 		"language": "es",
