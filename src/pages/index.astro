@@ -1,36 +1,25 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import Page from "@layouts/Page.astro";
 import works from "@data/works.json";
-import { HeaderNav } from "@components/HeaderNav";
 import { CardWorkToLeft, CardWorkToRight } from "@components/CardWork";
-import { LinkSocial, LinkArrow } from "@components/Link";
-import { About } from "@components/About";
-import { IconGithub, IconLinkedin } from "@components/Icons";
-import { Contact } from "@components/Contact";
-import { Footer } from "@components/Footer";
+import { LinkArrow } from "@components/Link";
+import Home from "@layouts/Home.astro";
 
 const pinWorks = [...works].filter(
 	(work) =>
-		(work.language === "en" && work.title === "Cyberpunk Edgerunners") ||
-		(work.language === "en" && work.title === "Tic Tac Toe") ||
-		(work.language === "en" && work.title === "GitHub User Search")
+		work.title === "Cyberpunk Edgerunners" ||
+		work.title === "Tic Tac Toe" ||
+		work.title === "GitHub User Search"
 );
 ---
 
-<Layout
+<Page
+	lang="es"
 	title="Daniel Cordero - @dnlambb"
 	desc="Frontend Developer, #Javascript #React"
 >
-	<HeaderNav client:load />
-	<main class="px-6 text-start relative overflow-hidden sm:px-10 md:px-20">
-		<div
-			class="z-[-2] absolute top-0 w-screen h-screen lg:bg-curveLines bg-no-repeat bg-cover"
-		>
-		</div>
-		<section
-			id="home"
-			class="min-h-[93vh] max-w-5xl mx-auto pt-10 pb-20 flex flex-col place-content-center"
-		>
+	<Home>
+		<Fragment slot="home-section">
 			<h1
 				class="font-heading font-bold text-4xl text-color-4 sm:text-5xl lg:text-6xl"
 			>
@@ -40,33 +29,16 @@ const pinWorks = [...works].filter(
 				Frontend Developer
 			</h2>
 			<p class="pt-8 text-lg max-w-screen-sm opacity-90">
-				1 year of experience in personal projects.<br />
-				Web development with React.<br /> Currently, I focus on building projects
-				to learn more.
+				1 año de experiencia en proyectos personales.<br />
+				Desarrollo Web con React.<br /> Enfocado en construir proyectos y seguir aprendiendo.
 			</p>
-			<div class="pt-8 inline-flex gap-6">
-				<LinkSocial
-					href="https://www.linkedin.com/in/daniel-cordero-meléndez/"
-					ariaLabel="Visit my Linkedin"
-					newPage
-				>
-					<IconLinkedin fill="#fff" classname="w-12" />
-				</LinkSocial>
-				<LinkSocial
-					href="https://github.com/dnlambb"
-					ariaLabel="Visit my GitHub"
-					newPage
-				>
-					<IconGithub fill="#fff" classname="w-12" />
-				</LinkSocial>
-			</div>
-		</section>
+		</Fragment>
 
-		<section class="m-auto max-w-5xl">
+		<Fragment slot="works-section">
 			<h2
 				class="font-heading font-medium pb-8 text-color-4 text-2xl text-center sm:text-3xl lg:text-start"
 			>
-				Some Works
+				Proyectos Destacados
 			</h2>
 			<div
 				class="w-full flex flex-col items-center pb-8 gap-10 lg:columns-1 lg:flex lg:flex-col lg:gap-20"
@@ -98,11 +70,8 @@ const pinWorks = [...works].filter(
 						);
 					})
 				}
-				<LinkArrow href="/works" content="More Works" />
+				<LinkArrow href="/works" content="Más Proyectos" />
 			</div>
-		</section>
-		<About />
-		<Contact />
-	</main>
-	<Footer />
-</Layout>
+		</Fragment>
+	</Home>
+</Page>

@@ -1,8 +1,9 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import { BtnPrimary } from "@components/Button";
+import Page from "@layouts/Page.astro";
 ---
 
-<Layout title="Page not found - 404 error" desc="The page is not found">
+<Page lang="es" title="Page not found - 404 error" desc="The page is not found">
   <main class="grid h-screen px-4 bg-white place-content-center">
     <section class="text-center w-fit">
       <h1 class="m-auto font-black text-9xl text-color-4">404</h1>
@@ -11,14 +12,9 @@ import Layout from "@layouts/Layout.astro";
         error
       </p>
 
-      <p class="mt-10 opacity-90">Page not found.</p>
+      <p class="mt-10 opacity-90">Página no encontrada.</p>
 
-      <a
-        href="/"
-        class="inline-block px-5 py-3 mt-6 text-sm font-heading font-bold bg-color-4 text-color-3 rounded hover:bg-opacity-80 focus:outline-none focus:ring"
-      >
-        Go Back Home
-      </a>
+      <BtnPrimary href="/" content="Volver al inicio" />
     </section>
   </main>
-</Layout>
+</Page>

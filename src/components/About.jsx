@@ -5,20 +5,20 @@ export const About = () => {
   return (
     <section id='about' className='max-w-5xl mx-auto py-20'>
       <h2 className='font-medium font-heading pb-6 text-2xl text-color-4 sm:text-3xl '>
-        About Me
+        Sobre mí
       </h2>
       <p className='pb-3 max-w-screen-md'>
-        I'm passionate about programming and the world of technology. My goal is
-        to improve and learn more about scalable and impactful software
-        development.
+        Me apasiona la programación y el mundo de la tecnología. Mi objetivo es
+        mejorar como desarrollador, aprender más sobre el desarrollo de software escalable y
+        de las buenas prácticas.
         <br />
       </p>
       <p className='pb-3 max-w-screen-md'>
-        I'm currently studying programming analyst at Inacap university. In my
-        spare time, I like to continue learning as an autodidact.
+        Actualmente estudio Analista Programador en la universidad Inacap. En mi
+        tiempo libre, me gusta seguir aprendiendo como autodidacta.
       </p>
       <p>
-        When I'm not developing, I like to read, play video games or volleyball.
+        Cuando no estoy desarrollando, me gusta leer, jugar voleibol o videojuegos.
       </p>
       <Resume />
       <Skills />

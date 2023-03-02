@@ -18,7 +18,7 @@ export const Skills = () => {
   return (
     <section className='w-full mt-16'>
       <h3 className='font-heading font-medium text-xl sm:text-2xl text-color-4 pb-10'>
-        Skills
+        Conocimientos
       </h3>
       <div className='max-w-max flex flex-col gap-6 sm:flex-row group'>
         <h4 className='font-heading font-medium opacity-90 sm:m-auto'>
@@ -86,7 +86,7 @@ export const Skills = () => {
       </div>
       <div className='max-w-max flex flex-col gap-6 sm:flex-row'>
         <h4 className='font-heading font-medium opacity-80 sm:m-auto sm:pl-20'>
-          Others
+          Otros
         </h4>
         <div className='flex flex-wrap gap-6 justify-start items-center'>
           <Git

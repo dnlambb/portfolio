@@ -1,17 +1,17 @@
 ---
 import { HeaderNav } from "@components/HeaderNav";
 import { CardWorkSimple } from "@components/CardWork";
-import Layout from "@layouts/Layout.astro";
+import Page from "@layouts/Page.astro";
 import works from "@data/works.json";
 import { Footer } from "@components/Footer";
 import { LinkArrow } from "@components/Link";
 
-const enWorks = [...works].filter((work) => work.language === "en");
+const enWorks = [...works];
 ---
 
-<Layout
+<Page
 	title="Daniel Cordero - @dnlambb - Works"
-	desc="@dnlambb Works. Frontend Developer, #JavaScript #React"
+	desc="@dnlambb Proyectos. Frontend Developer, #JavaScript #React"
 >
 	<HeaderNav client:load />
 	<main class="px-6">
@@ -19,7 +19,7 @@ const enWorks = [...works].filter((work) => work.language === "en");
 			<h1
 				class="font-heading pb-2 text-3xl sm:text-4xl text-center text-color-4"
 			>
-				Works
+				Proyectos
 			</h1>
 		</section>
 		<section class="w-full max-w-6xl mx-auto pb-20 columns-1 md:columns-2">
@@ -40,8 +40,8 @@ const enWorks = [...works].filter((work) => work.language === "en");
 		</section>
 		<LinkArrow
 			href="https://github.com/dnlambb?tab=repositories"
-			content="All Works"
+			content="Más en Github"
 		/>
 	</main>
 	<Footer />
-</Layout>
+</Page>

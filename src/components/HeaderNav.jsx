@@ -5,15 +5,15 @@ import { useState } from 'react'
 
 export const HeaderNav = () => {
   const links = [
-    { name: 'Home', href: '/#home' },
-    { name: 'About', href: '/#about' },
-    { name: 'Works', href: '/works' },
-    { name: 'Contact', href: '/#contact' }
+    { label: 'Inicio', href: '/#home' },
+    { label: 'Sobre', href: '/#about' },
+    { label: 'Proyectos', href: '/works' },
+    { label: 'Contacto', href: '/#contact' }
   ]
   const [open, setOpen] = useState(false)
   return (
-    <header className='z-10 sticky w-full top-0'>
-      <nav className='py-2 px-8 flex items-center md:px-10 bg-navbar border-b border-b-color-1 backdrop-blur-sm'>
+    <header className='z-10 sticky w-full top-0 bg-navbar border-b border-b-color-1 backdrop-blur-sm'>
+      <nav className='max-w-lg m-auto py-1 px-8 flex flex-row-reverse items-center md:px-10 md:flex-row'>
         <div className='z-20 flex items-center cursor-pointer'>
           <a href='/' aria-label='Visit the home page'>
             <IconLogo
@@ -24,7 +24,7 @@ export const HeaderNav = () => {
         </div>
 
         <span
-          className='z-20 absolute right-8 top-3 cursor-pointer md:hidden'
+          className='z-20 absolute left-8 top-1 cursor-pointer rotate-180 md:hidden'
           onClick={() => setOpen(!open)}
         >
           {!open
@@ -42,8 +42,8 @@ export const HeaderNav = () => {
           }`}
         >
           {links.map(link => (
-            <li key={link.name} className='text-xl my-7 md:my-0 md:ml-8'>
-              <Link href={link.href}>{link.name}</Link>
+            <li key={link.label} className='text-base my-7 md:my-0 md:ml-8'>
+              <Link href={link.href}>{link.label}</Link>
             </li>
           ))}
           <li className='pt-10 md:hidden'>

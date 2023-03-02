@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className='mt-20 px-6'>
       <ul className='max-w-fit mx-auto grid grid-cols-2 gap-5 sm:flex'>
         <FooterLink href='https://github.com/dnlambb/portfolio'>
-          Repository
+          Repositorio
         </FooterLink>
         <FooterLink href='https://www.linkedin.com/in/daniel-cordero-meléndez/'>
           Linkedin

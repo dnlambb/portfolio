@@ -10,10 +10,10 @@ export const Contact = () => {
     >
       <div className='w-fit h-fit mx-auto sm:my-auto sm:text-center lg:mx-0 lg:text-start'>
         <h2 className='text-color-4 text-3xl pb-5 font-medium font-heading sm:text-4xl'>
-          Let's talk?
+          ¿Hablemos?
         </h2>
-        <p>I will try to respond as soon as possible.</p>
-        <p>Don't be shy and contact me in the following ways:</p>
+        <p>Intentaré responder lo antes posible.</p>
+        <p>No seas tímido y ponte en contacto conmigo de las siguientes maneras:</p>
         <div className='flex flex-wrap gap-6 w-fit py-5 sm:mx-auto lg:m-0 lg:mt-auto'>
           <LinkSocial
             href='mailto:dnlambb@writeme.com?Subject=Hello'

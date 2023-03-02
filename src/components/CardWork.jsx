@@ -23,11 +23,11 @@ const CardWorkToRight = ({
         <footer className='w-fit flex flex-wrap gap-5 sm:gap-10'>
           <Link href={linkRepo} newPage>
             <IconGithub fill='#fff' classname='w-8' />
-            Repository
+            Repositorio
           </Link>
           <Link href={linkWeb} newPage>
             <IconLink fill='#fff' classname='w-6' />
-            Website
+            Sitio Web
           </Link>
         </footer>
       </div>
@@ -64,11 +64,11 @@ const CardWorkToLeft = ({
         <footer className='w-fit flex flex-wrap gap-5 sm:gap-10 lg:ml-auto'>
           <Link href={linkRepo} newPage>
             <IconGithub fill='#fff' classname='w-8' />
-            Repository
+            Repositorio
           </Link>
           <Link href={linkWeb} newPage>
             <IconLink fill='#fff' classname='w-6' />
-            Website
+            Sitio Web
           </Link>
         </footer>
       </div>
@@ -96,11 +96,11 @@ const CardWorkSimple = ({ date, title, desc, tech, linkRepo, linkWeb }) => {
         <footer className='w-fit flex flex-wrap gap-5 sm:gap-10'>
           <Link href={linkRepo} newPage>
             <IconGithub fill='#fff' classname='w-8' />
-            Repository
+            Repositorio
           </Link>
           <Link href={linkWeb} newPage>
             <IconLink fill='#fff' classname='w-6' />
-            Website
+            Sitio Web
           </Link>
         </footer>
       </div>
